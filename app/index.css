@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,700;1,300&display=swap');
+body {
+    background-color: black;
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#password {
+    font-size: 140%;
+    width: 260px;
+}
+
+button {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    border: none;
+    background: none;
+    background-color: white;
+    color: black;
+    border: white;
+    transition: background-color 200ms;
+}
+
+button:hover {
+    background-color: rgb(231, 133, 52);
+    font-style: italic;
+    font-weight: bold;
+}
+
+button:focus {
+    outline: none;
+    background-color: rgb(102, 223, 55);
+    font-style: italic;
+    font-weight: bold;
+    border: rgb(102, 223, 55);
+}
+
+.password-input {
+    margin-bottom: 10px;
+}

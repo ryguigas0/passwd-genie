@@ -1,16 +1,17 @@
 {
-  "name": "alura_timer",
+  "name": "PasswordGenie",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple password verifier and generator",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "electromon .",
     "start": "electron ."
   },
   "author": "Guilherme Oliveira Casagrande",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "electromon": "^1.0.10",
     "electron": "^10.1.6",
     "nodemon": "^2.0.6"
   }
