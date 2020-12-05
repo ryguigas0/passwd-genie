@@ -5,11 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Genie</title>
+    <script src="js/passwordGenerator.js" defer> </script>
+    <script src="js/copyToClipboard.js" defer></script>
 </head>
 
 <body>
     <div class="container">
         <h1>Password Genie, the password generator</h1>
+        <p>Generate a password by pressing the "Generate password" button or type a password to check its strength!</p>
+        <input placeholder="Type your password here!" id="password" /> <button id="copy-button">Copy to clipboard!</button>
+
+        <label for="length">Password length</label>
+        <input id="length" type="number" max="30" min="4" value="8">
+
+        <label for="upperCase">Upper case letters</label>
+        <input id="upperCase" type="checkbox" checked>
+
+        <label for="upperCase">Lower case letters</label>
+        <input id="lowerCase" type="checkbox" checked>
+
+        <label for="upperCase">Numbers</label>
+        <input id="numbers" type="checkbox" checked>
+
+        <label for="symbols">Symbols</label>
+        <input id="symbols" type="checkbox">
+
+        <button id="generate-button">
+            Generate password
+        </button>
     </div>
 </body>
 

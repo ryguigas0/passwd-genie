@@ -1,15 +1,15 @@
-const { app, BrowserWindow, ipcMain } = require("electron")
+const { app, BrowserWindow } = require("electron")
 
-app.on('ready', () => {
+app.whenReady().then(() => {
     console.log("Running password generator")
-    let janelaPrincipal = new BrowserWindow({
+    let mainWindow = new BrowserWindow({
         width: 1000, height: 800,
         fullscreenable: true,
         webPreferences: {
             nodeIntegration: true
         }
     })
-    janelaPrincipal.loadURL(`file://${__dirname}/app/index.html`)
+    mainWindow.loadURL(`file://${__dirname}/app/index.html`)
 })
 
-app.on("window-all-closed", () => { app.quit() })
+app.once("window-all-closed", () => { app.quit() })
