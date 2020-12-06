@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <script src="js/passwordGenerator.js" defer> </script>
     <script src="js/copyToClipboard.js" defer></script>
+    <script src="js/passwordStrengthCheck.js"></script>
 </head>
 
 <body>
@@ -15,8 +16,11 @@
         <h1>Password Genie, the password generator</h1>
         <p>Generate a password by pressing the "Generate password" button or type a password to check its strength!</p>
 
-        <div>
-            <input placeholder="Type your password here!" id="password" />
+        <div class="password-display">
+            <div class="password-input">
+                <input placeholder="Type your password here!" id="password" oninput="checkStrength(event)" />
+                <span id="feedback"></span>
+            </div>
             <button id="copy-button">
                 <img src="public/clipboard.svg" alt="Copy to clipboard">
             </button>

@@ -5,7 +5,7 @@ body {
     color: white;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -41,6 +41,18 @@ button:focus {
     border: rgb(102, 223, 55);
 }
 
+button#copy-button{
+    width: min-content;
+    height: min-content;
+}
+
 .password-input {
     margin-bottom: 10px;
+}
+
+.password-display {
+    display: flex;
+    gap: 20px;
+    width: 331px;
+    height: 63px;
 }

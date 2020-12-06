@@ -31,7 +31,12 @@ function generatePassword() {
     }
 
     passwordDisplay.value = result
-    return
+    let fakeEvent = {
+        target: {
+            value: result
+        }
+    }
+    checkStrength(fakeEvent)
 }
 
 generateButton.onclick = generatePassword
