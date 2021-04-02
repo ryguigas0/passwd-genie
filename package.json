@@ -1,5 +1,5 @@
 {
-  "name": "PasswordGenie",
+  "name": "psswd-genie",
   "version": "1.0.0",
   "description": "A simple password verifier and generator",
   "main": "main.js",
