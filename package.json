@@ -5,7 +5,10 @@
   "main": "main.js",
   "scripts": {
     "dev": "electromon .",
-    "start": "electron ."
+    "start": "electron .",
+    "install-mac": "electron-packager ./ psswd-genie --platform=darwin --arch=x64 --ignore=/gitignore|node_modules/",
+    "install-linux": "electron-packager ./ psswd-genie --platform=linux --arch=x64 --ignore=/gitignore|node_modules/",
+    "install-win": "electron-packager ./ psswd-genie --platform=win32 --arch=x64 --ignore=/gitignore|!node_modules/**/*|README/"
   },
   "author": "Guilherme Oliveira Casagrande",
   "license": "ISC",
@@ -15,6 +18,7 @@
   "devDependencies": {
     "electromon": "^1.0.10",
     "electron": "^10.1.6",
+    "electron-packager": "^15.2.0",
     "nodemon": "^2.0.6"
   }
 }
